@@ -1,0 +1,468 @@
+<html>
+    <head>
+        <style>
+            #login_bar{
+                display:flex;
+                width:auto;
+                height:50px;
+                justify-content: space-between;
+                padding:0px 120px 0px 120px;
+               
+            }
+            #login_bar>div{
+                margin:10px 0px 10px 0px;
+            }
+            /* #login_bar>div>button{
+                  background-color: white;
+                  border:0px;
+                  margin-right: 15px;
+            } */
+            #navbar{
+                display:flex;
+                width:auto;
+                height:80px;
+                background-color: white;
+                justify-content: space-between;
+                padding:0px 120px 0px 120px;
+                position: sticky;
+                top:0px;
+            }
+            #navbar>div{
+                display: flex;
+                justify-content: space-between;
+                margin:auto 0px auto 0px;
+            }
+            #navbar>div>div{
+                
+                margin:auto 0px auto 50px;
+            }
+            button{
+                margin-right: 15px;
+                background-color: white;
+                border: 0px;
+            }
+            #navbar>button{
+                margin:20px 0px 20px 0px;
+                width:180px;
+                background-color: #f85c1f;
+                color: whitesmoke;
+            }
+            #service-1{
+                width:auto;
+                display:flex;
+                justify-content: space-between;
+                background-color:#FF5C35;
+                height:430px;
+                padding:120px 0px 120px 140px;
+            }
+            #service-1>div:nth-child(1){
+                height: 450px;
+                color:white;
+                width:650px;
+
+            }
+            #service-1>div:nth-child(2)>img{
+                width:850px;
+                height:500px;
+                margin-right: -180px;
+            }
+            #service-1>div>p{
+                font-size:20px;
+            }
+            #service-1>div>h1{
+                font-size:65px;
+            }
+            #service-1>div>div{
+                background-color: white;
+                width:45%;
+                height: 50px;
+                padding-top: 20px;
+                text-align: center;
+
+            }
+            #service-1>div>div>a{
+                color:black;
+                font-size: 20px;
+              
+            }
+            #service-2{
+                margin:30px 120px 30px 120px
+            }
+            
+            #service-2>div:nth-child(1){
+                width: 70%;
+                margin:60px auto;
+                font-size:25px;
+                height:auto;
+                justify-content: center;
+                line-height: 30px;
+                font-size: 1.2em;
+                text-align: center;
+            }
+            #service-2>div:nth-child(1)>div{
+                text-align: center;
+                margin-top: 50px;
+            }
+            #service-2>div:nth-child(1)>div>a{
+                text-align: center;
+                border:1px solid #FF5C35;
+                padding:15px;
+                margin-right: 15px;
+                color: white;
+                
+            }
+            #package{
+                display:grid;
+                /* margin:20px 120px 20px 120px; */
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                gap:25px;
+            
+                
+            }
+            #package>div{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding:10px 35px 30px 35px;
+                height:auto;
+                line-height: 30px;
+                font-size: 1.2em;
+                
+            }
+            #package>div>div>img{
+                width:35px;
+                height:auto;
+                margin-right: 25px;
+
+            }
+            #package>div>div:nth-child(1){
+                display:flex;
+                justify-content:flex-start;
+                font-size: 25px;
+                
+            }
+            #package>div>div:nth-child(2)>div{
+                margin-top: 35%;
+                font-size: 22px;
+            }
+            .box{
+                background-color: #FF5C35;
+                text-align: center;
+                height:1.6em;
+                color:white;
+                font-weight: bold;
+            }
+            .support{
+                background-color: hsl(194, 82%, 48%);
+                color: white;
+                padding:7rem;
+                margin-top: 100px 120px 20px 120px;
+            
+            }
+            .support>div:nth-child(1){
+                width:60%;
+                margin:auto;
+                font-size: 1.2em;
+                line-height: 35px;
+                text-align: center;
+            }
+            #box2{
+                margin-top: 60px;
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(2,1fr);
+                text-align: center;
+                font-weight: bold;
+                gap:30px;
+            }
+            #box2>div{
+                
+                padding:10px;
+            }
+            .boximage{
+                width:100%;
+                height:auto;
+                margin:auto;
+            }
+            #box2>div>div+p{
+               font-size: 40px;
+               font-weight: bold;
+               margin:15px;
+            }
+            .support2{
+                display:flex;
+                margin:40px 120px 40px 120px;
+            }
+            .support2>div+div{
+                width:70%;
+                height:auto
+            }
+            .support2>div:nth-child(2){
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(2,1fr);
+                gap:40px;
+
+            }
+            .support2>div:nth-child(2)>div>img{
+                width:100%;
+                height:auto;
+            }
+
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="login_bar">
+            <div>
+                <button>English</button>
+                <button>Contact Sales</button>
+            </div>
+            <div>
+               
+                <button>Login</button>
+                <button>Customer Support</button>
+                <button>About</button>
+            </div>
+        </div>
+        <div id="navbar">
+            <div>
+                <button><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTg1LjQ0IDE2NS45NSIgd2lkdGg9IjEwNnB4IiBoZWlnaHQ9IjMwcHgiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6bm9uZTsKICAgICAgfQogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICMzMzQ3NWI7CiAgICAgICAgY2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTsKICAgICAgfQogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZjdhNTk7CiAgICAgICAgY2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTIpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPgogICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI1ODUuNDQiIGhlaWdodD0iMTY1Ljk2Ii8+CiAgICA8L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSI+CiAgICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMzc2LjA0IiB3aWR0aD0iMTU2LjE0IiBoZWlnaHQ9IjE2My42MiIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPHRpdGxlPkxvZ28gLSBGdWxsIChDb2xvcik8L3RpdGxlPgogIDxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgPGcgY2xhc3M9ImNscy0yIj4KICAgICAgPHBvbHlnb24gcG9pbnRzPSI2My40IDI3LjQ3IDYzLjQgNzQuMjggMjAuNDEgNzQuMjggMjAuNDEgMjcuNDcgMCAyNy40NyAwIDEzOS4yMSAyMC40MSAxMzkuMjEgMjAuNDEgOTMuOTIgNjMuNCA5My45MiA2My40IDEzOS4yMSA4My44MSAxMzkuMjEgODMuODEgMjcuNDcgNjMuNCAyNy40NyIvPgogICAgICA8cGF0aCBkPSJNMTQ5LjEzLDEwMy4wOWExNi44OCwxNi44OCwwLDAsMS0zMy43NywwVjU1LjIzSDk2djQ3Ljg2YTM2LjIxLDM2LjIxLDAsMCwwLDcyLjQyLDBWNTUuMjNIMTQ5LjEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgICA8cGF0aCBkPSJNMjkyLjU3LDYwLjE2YzAtOS44MSw2LjQ5LTEyLjkyLDEzLjYtMTIuOTIsNS43MywwLDEzLjMsNC4zNiwxOC4yNSw5LjY1TDMzNy4xLDQxLjk1Yy02LjMzLTguNTYtMTkuMTctMTQuNDgtMjkuNjgtMTQuNDgtMjEsMC0zNi4xOSwxMi4zLTM2LjE5LDMyLjY5LDAsMzcuODMsNDYuMjQsMjUuODMsNDYuMjQsNDcsMCw2LjUzLTYuMzQsMTIuMy0xMy42LDEyLjMtMTEuNDUsMC0xNS4xNi01LjYtMjAuNDItMTEuNTJsLTE0LjA3LDE0LjYzYzksMTEuMDUsMjAuMSwxNi42NiwzMy40LDE2LjY2LDE5Ljk1LDAsMzYtMTIuNDUsMzYtMzEuOTEsMC00Mi00Ni4yNC0yOC45NS00Ni4yNC00Ny4xNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgICA8cGF0aCBkPSJNNTc4LjYzLDEyMS4zNmMtMTEuNDQsMC0xNC42OS00Ljk1LTE0LjY5LTEyLjUzVjc1LjI4aDE3Ljc4di0xN0g1NjMuOTRWMzUuODVsLTE5LjYzLDguODFWMTEzYzAsMTcuNDgsMTIuMDYsMjYuMjksMjguNiwyNi4yOWEzOS42MiwzOS42MiwwLDAsMCw3Ljc0LS42Mmw0Ljc5LTE3LjYzYy0yLjE2LjE1LTQuNjQuMy02LjgxLjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiLz4KICAgICAgPHBhdGggZD0iTTIyMi44Miw1NS43OWMtOS41OSwwLTE2LjI4LDIuNzgtMjIuNzUsOS4xM1YyOC4xNEgxODAuNjhWOTYuMzFjMCwyNS41MiwxOC40NSw0MywzOS4xOCw0MywyMywwLDQzLjIzLTE3Ljc5LDQzLjIzLTQxLjc1LDAtMjMuNjYtMTguNjItNDEuNzYtNDAuMjctNDEuNzZtLS4xMiw2NGEyMiwyMiwwLDEsMSwyMi0yMiwyMiwyMiwwLDAsMS0yMiwyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgICA8cGF0aCBkPSJNNDMzLjM2LDk2LjU0YzAtMjQtMjAuMTktNDEuNzUtNDMuMjMtNDEuNzUtMjAuNzMsMC0zOS4xOCwxNy40OC0zOS4xOCw0M1YxNjZoMTkuMzlWMTI5LjE3YzYuNDYsNi4zNCwxMy4xNiw5LjEzLDIyLjc0LDkuMTMsMjEuNjUsMCw0MC4yNy0xOC4wOSw0MC4yNy00MS43Nk00MTUsOTYuM2EyMiwyMiwwLDEsMS0yMi0yMiwyMiwyMiwwLDAsMSwyMiwyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgPC9nPgogICAgPGcgY2xhc3M9ImNscy0zIj4KICAgICAgPHBhdGggZD0iTTQ5Niw1My44NVYzNC4zN2ExNSwxNSwwLDAsMCw4LjY1LTEzLjUydi0uNDVhMTUsMTUsMCwwLDAtMTUtMTVoLS40NWExNSwxNSwwLDAsMC0xNSwxNXYuNDVhMTUsMTUsMCwwLDAsOC42NSwxMy41MlY1My44NWE0Mi40OCw0Mi40OCwwLDAsMC0yMC4yLDguODlMNDA5LjIzLDIxLjEzYTE2Ljc1LDE2Ljc1LDAsMCwwLC42LTQuMjEsMTYuOSwxNi45LDAsMSwwLTE2LjkyLDE2Ljg3LDE2LjcyLDE2LjcyLDAsMCwwLDguMzItMi4yNmw1Mi42MSw0MC45M2E0Mi42MSw0Mi42MSwwLDAsMCwuNjUsNDhsLTE2LDE2YTEzLjc0LDEzLjc0LDAsMCwwLTQtLjY1LDEzLjg4LDEzLjg4LDAsMSwwLDEzLjg5LDEzLjg5LDEzLjcsMTMuNywwLDAsMC0uNjUtNGwxNS44My0xNS44M0E0Mi42OCw0Mi42OCwwLDEsMCw0OTYsNTMuODVtLTYuNTYsNjQuMDZBMjEuOSwyMS45LDAsMSwxLDUxMS4zNiw5NmEyMS45LDIxLjksMCwwLDEtMjEuOSwyMS45IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" alt=""></button>
+                <div>
+                    <button style="font-size: 18px">Software</button>
+                    <button style="font-size: 18px">Pricing</button>
+                    <button style="font-size: 18px">Resources</button>
+                </div>
+            </div>
+                <button>Start free or get a demo</button>
+        </div>
+        <div id="service-1">
+            <div>
+                <p>HUBSPOT CRM PLATFORM</p>
+                <h1>Powerful,
+                <br>
+                not overpowering</h1>
+                <p>Finally,a CRM platform that's both powerful and easy to use.Create delightful customer experiences.Have a delightful time doing it.</p>
+                <div><a href="">Start free or get a demo</a></div>
+                <p>Get started with 
+                    free tools,or get more<br> with our premium software</p>
+            </div>
+            <div>
+                <img src="https://www.hubspot.com/hubfs/SUI-Homepage-Header-Desktop@2x.png"/>
+            </div>
+        </div>
+        <div id="service-2">
+            <div>
+                <h2>The CRM Platform Your Whole Buisness Will Love</h2>
+                <p>HubSpot's CRM platform has all the tools and integration you need for marketing,sales,content management,and customer service.Each product in the platform is powerful alone,but the real magic happens when you see them together</p>
+                <div>
+                    <a class="box" href="" style="background-color:FF5C35 ">Get free CRM</a>
+                    <a href="" style="color:#FF5C35" >Demo premium CRM</a>
+                </div>
+            </div>
+            <div id="package">
+                <div>
+                    <div>
+                        <img src="https://www.hubspot.com/hubfs/product_icons_2022/MarketingHub_Icon_Gradient_RGB_24px.svg"/>
+                        <h3>Marketing Hub</h3>
+                    </div>
+                    <div>
+                        <p>Marketing software to help you grow traffic,convert more visitors,and run complete inbound marketing compaigns at scale.</p>
+                        
+                        <div>
+                            <p>Popular features</p>
+                            <div>
+                                <ul>
+                                    <li>Lead generation</li>
+                                    <li>Marketting automation</li>
+                                    <li>Analytics</li>
+                                </ul>
+                                <div class="box">Get Started</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.hubspot.com/hubfs/product_icons_2022/SalesHub_Icon_Gradient_RGB_24px.svg"/>
+                        <h3>Sales Hub</h3>
+                    </div>
+                    <div>
+                        <p>Sales CRM software to help you get deeper insight into prospects,automate the task you hate,and close more deals faster.</p>
+                        <div>
+                            <p>Popular Features</p>
+                            <div>
+                                <ul>
+                                    <li>Advanced CRM</li>
+                                    <li>Marketing scheduling</li>
+                                    <li>Payments</li>
+                                </ul>
+                                <div class="box">Get Started</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.hubspot.com/hubfs/product_icons_2022/ServiceHub_Icon_Gradient_RGB_24px.svg"/>
+                        <h3>Service Hub</h3>
+                    </div>
+                    <div>
+                        <p>Customer service software to help you connect with customers,exceed expectation,and turn them into promoters who grow your buisness.
+                        </p>
+                        <div>
+                            <p>Popular Features</p>
+                            <div>
+                                <ul>
+                                    <li>Tickets</li>
+                                    <li>Customer feedback</li>
+                                    <li>Knowledge base</li>
+                                </ul>
+                                <div class="box">Get Started</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.hubspot.com/hubfs/product_icons_2022/CMSHub_Icon_Gradient_RGB_24px.svg"/>
+                        <h3>CMS Hub</h3>
+                    </div>
+                    <div>
+                        <p>COntent management software that's flexible for marketers, powerful for developers,and gives customers a personalized,secure experience.</p>
+                        <div>
+                            <p>Popular features</p>
+                            <div>
+                                <ul>
+                                    <li>Drag and drop editor</li>
+                                    <li>SEO recommendation</li>
+                                    <li>Website themes</li>
+                                </ul>
+                                <div class="box">Get Started</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.hubspot.com/hubfs/product_icons_2022/OperationsHub_Icon_Gradient_RGB_24px.svg"/>
+                        <h3>Operation Hub</h3>
+                    </div>
+                    <div>
+                        <p>Operation software that sync your apps, clean and curates customers date,and automate process-so all your systems and teams work better together.</p>
+                        <div>
+                            <p>Popular features</p>
+                            <div>
+                                <ul>
+                                    <li>Data sync</li>
+                                    <li>Progrmammable automation</li>
+                                    <li>Data quality automation</li>
+                                </ul>
+                                <div class="box"><b>Get Started</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+        <div class="support">
+            <div>
+                <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
+                <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with HubSpot's legendary customer support team and a community of thousands of marketing and sales pros just like you.</p>
+            </div>
+            <div id="box2">
+                <div>
+                    <div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_agency.svg">
+                    </div>
+                    <p>150+</p>
+                    <p>HubSpot users groups</p>
+                </div>
+                <div>
+                    <div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_blog.svg">
+                    </div>
+                    <p>7 M+</p>
+                    <p>Monthly visit</p>
+                </div>
+                <div>
+                    <div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_academy.svg">
+                    </div>
+                    <p>460K+</p>
+                    <p>certified professional</p>
+                </div>
+                <div>
+                    <div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_inbound.svg">
+                    </div>
+                    <p>70K</p>
+                    <p>register atttendee</p>
+                </div>
+                <div><div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_globe.svg">
+                    </div>
+                    <p>1,090+</p>
+                    <p>integration</p>
+                </div>
+                <div>
+                    <div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_globe.svg">
+                    </div>
+                    <p>6</p>
+                    <p>languages</p>
+                </div>
+                <div>
+                    <div class="boximage">
+                    <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_followers.svg">
+                    </div>
+                    <p>3.1 M+</p>
+                    <p>social followers</p>
+                </div>
+                <div>
+                    <div class="boximage">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/Lists.svg">
+                    </div>
+                    <p>143,000+</p>
+                    <p>customers</p>
+                </div>
+            </div>
+        </div>
+        <div class="support2">
+            <div>
+                <h2>143,000+</h2>
+                <p>customers in over 120 countries growing their businesses with HubSpot</p>
+            </div>
+            <div >
+            <div>
+                <img src="https://f.hubspotusercontent00.net/hubfs/53/1200px-WWF_logo_svg%20(1).png">
+            </div>
+            <div>
+                <img src="https://f.hubspotusercontent00.net/hubfs/53/trello-logo-blue%20(1).png">
+            </div>
+            <div>
+                <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/homepage/Vertical_Sabaeus_RGB.svg">
+            </div>
+            <div>
+                <img src="https://newinboundblog.hubspot.com/hubfs/assets/hubspot.com/case-studies/logo-bank/EMEA-logo-bank/Suzuki.png"/>
+
+            </div>
+            <div>
+                <img src="https://f.hubspotusercontent00.net/hubfs/53/soundcloud.png"/>
+            </div>
+            <div>
+                <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/home_page_logos_June_2019/Classpass-logo@2x.png"/>
+            </div>
+            <div>
+                <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/home_page_logos_June_2019/VMware_logo_gry_RGB_300dpi@2x.png"/>
+            </div>
+
+            </div>
+        </div>
+
+
+        
+    </body>
+</html>
