@@ -1,4 +1,665 @@
 <html>
-    <head></head>
-    <body></body>
+    <head>
+        <script src="https://kit.fontawesome.com/b8d8b862f2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="price.css">
+        <style>
+         
+          
+        </style>
+    </head>
+    <body>
+        <div id="login_bar">
+            <div>
+                <button>English</button>
+                <button>Contact Sales</button>
+            </div>
+            <div>
+               
+                <button>Login</button>
+                <button>Customer Support</button>
+                <button>About</button>
+            </div>
+        </div>
+        <div id="navbar">
+            <div>
+                <a href="homepage.html"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTg1LjQ0IDE2NS45NSIgd2lkdGg9IjEwNnB4IiBoZWlnaHQ9IjMwcHgiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6bm9uZTsKICAgICAgfQogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICMzMzQ3NWI7CiAgICAgICAgY2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTsKICAgICAgfQogICAgICAuY2xzLTMgewogICAgICAgIGZpbGw6ICNmZjdhNTk7CiAgICAgICAgY2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTIpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPgogICAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI1ODUuNDQiIGhlaWdodD0iMTY1Ljk2Ii8+CiAgICA8L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSI+CiAgICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMzc2LjA0IiB3aWR0aD0iMTU2LjE0IiBoZWlnaHQ9IjE2My42MiIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPHRpdGxlPkxvZ28gLSBGdWxsIChDb2xvcik8L3RpdGxlPgogIDxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPgogICAgPGcgY2xhc3M9ImNscy0yIj4KICAgICAgPHBvbHlnb24gcG9pbnRzPSI2My40IDI3LjQ3IDYzLjQgNzQuMjggMjAuNDEgNzQuMjggMjAuNDEgMjcuNDcgMCAyNy40NyAwIDEzOS4yMSAyMC40MSAxMzkuMjEgMjAuNDEgOTMuOTIgNjMuNCA5My45MiA2My40IDEzOS4yMSA4My44MSAxMzkuMjEgODMuODEgMjcuNDcgNjMuNCAyNy40NyIvPgogICAgICA8cGF0aCBkPSJNMTQ5LjEzLDEwMy4wOWExNi44OCwxNi44OCwwLDAsMS0zMy43NywwVjU1LjIzSDk2djQ3Ljg2YTM2LjIxLDM2LjIxLDAsMCwwLDcyLjQyLDBWNTUuMjNIMTQ5LjEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgICA8cGF0aCBkPSJNMjkyLjU3LDYwLjE2YzAtOS44MSw2LjQ5LTEyLjkyLDEzLjYtMTIuOTIsNS43MywwLDEzLjMsNC4zNiwxOC4yNSw5LjY1TDMzNy4xLDQxLjk1Yy02LjMzLTguNTYtMTkuMTctMTQuNDgtMjkuNjgtMTQuNDgtMjEsMC0zNi4xOSwxMi4zLTM2LjE5LDMyLjY5LDAsMzcuODMsNDYuMjQsMjUuODMsNDYuMjQsNDcsMCw2LjUzLTYuMzQsMTIuMy0xMy42LDEyLjMtMTEuNDUsMC0xNS4xNi01LjYtMjAuNDItMTEuNTJsLTE0LjA3LDE0LjYzYzksMTEuMDUsMjAuMSwxNi42NiwzMy40LDE2LjY2LDE5Ljk1LDAsMzYtMTIuNDUsMzYtMzEuOTEsMC00Mi00Ni4yNC0yOC45NS00Ni4yNC00Ny4xNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgICA8cGF0aCBkPSJNNTc4LjYzLDEyMS4zNmMtMTEuNDQsMC0xNC42OS00Ljk1LTE0LjY5LTEyLjUzVjc1LjI4aDE3Ljc4di0xN0g1NjMuOTRWMzUuODVsLTE5LjYzLDguODFWMTEzYzAsMTcuNDgsMTIuMDYsMjYuMjksMjguNiwyNi4yOWEzOS42MiwzOS42MiwwLDAsMCw3Ljc0LS42Mmw0Ljc5LTE3LjYzYy0yLjE2LjE1LTQuNjQuMy02LjgxLjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiLz4KICAgICAgPHBhdGggZD0iTTIyMi44Miw1NS43OWMtOS41OSwwLTE2LjI4LDIuNzgtMjIuNzUsOS4xM1YyOC4xNEgxODAuNjhWOTYuMzFjMCwyNS41MiwxOC40NSw0MywzOS4xOCw0MywyMywwLDQzLjIzLTE3Ljc5LDQzLjIzLTQxLjc1LDAtMjMuNjYtMTguNjItNDEuNzYtNDAuMjctNDEuNzZtLS4xMiw2NGEyMiwyMiwwLDEsMSwyMi0yMiwyMiwyMiwwLDAsMS0yMiwyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgICA8cGF0aCBkPSJNNDMzLjM2LDk2LjU0YzAtMjQtMjAuMTktNDEuNzUtNDMuMjMtNDEuNzUtMjAuNzMsMC0zOS4xOCwxNy40OC0zOS4xOCw0M1YxNjZoMTkuMzlWMTI5LjE3YzYuNDYsNi4zNCwxMy4xNiw5LjEzLDIyLjc0LDkuMTMsMjEuNjUsMCw0MC4yNy0xOC4wOSw0MC4yNy00MS43Nk00MTUsOTYuM2EyMiwyMiwwLDEsMS0yMi0yMiwyMiwyMiwwLDAsMSwyMiwyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPgogICAgPC9nPgogICAgPGcgY2xhc3M9ImNscy0zIj4KICAgICAgPHBhdGggZD0iTTQ5Niw1My44NVYzNC4zN2ExNSwxNSwwLDAsMCw4LjY1LTEzLjUydi0uNDVhMTUsMTUsMCwwLDAtMTUtMTVoLS40NWExNSwxNSwwLDAsMC0xNSwxNXYuNDVhMTUsMTUsMCwwLDAsOC42NSwxMy41MlY1My44NWE0Mi40OCw0Mi40OCwwLDAsMC0yMC4yLDguODlMNDA5LjIzLDIxLjEzYTE2Ljc1LDE2Ljc1LDAsMCwwLC42LTQuMjEsMTYuOSwxNi45LDAsMSwwLTE2LjkyLDE2Ljg3LDE2LjcyLDE2LjcyLDAsMCwwLDguMzItMi4yNmw1Mi42MSw0MC45M2E0Mi42MSw0Mi42MSwwLDAsMCwuNjUsNDhsLTE2LDE2YTEzLjc0LDEzLjc0LDAsMCwwLTQtLjY1LDEzLjg4LDEzLjg4LDAsMSwwLDEzLjg5LDEzLjg5LDEzLjcsMTMuNywwLDAsMC0uNjUtNGwxNS44My0xNS44M0E0Mi42OCw0Mi42OCwwLDEsMCw0OTYsNTMuODVtLTYuNTYsNjQuMDZBMjEuOSwyMS45LDAsMSwxLDUxMS4zNiw5NmEyMS45LDIxLjksMCwwLDEtMjEuOSwyMS45IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" alt=""></a>
+                <div class="hbox5">
+                    <a href="">Software</a>
+                   <a  href="price.html" > Pricing</a>
+                    <a href="">Resources</a>
+                </div>
+            </div>
+                <button>Get Started</button>
+        </div>
+        <div class="box3">
+            <h2>Grow better with the right plan</h2>
+            <p>Pay for what you need</p>
+        </div>
+        <div class="box4">
+            <a>Products and plans</a>
+            <a>Bundles</a>
+        </div>
+        <div class="hbox5">
+            <a href="tools.html">Free tools</a>
+            <a href="price.html">Marketing</a>
+            <a href="">Sales</a>
+            <a href="">Customer Service</a>
+            <a href="">CMS</a>
+            <a href="">Operation</a>
+
+        </div>
+        <div class="mainbody">
+            <div class="mainbody1">
+                <img src="https://www.hubspot.com/hubfs/product_icons_2022/MarketingHub_Icon_Gradient_RGB_24px.svg"/>
+                <h3>Marketing Hub</h3>
+            </div>
+            <div class="mainbody2">
+                <p>Everything you need to capture leads and turn them into customers.</p>
+            </div>
+            <div class="mainbody3">
+                <h5>On September 1st, the price of Marketing Hub Enterprise will increase to $3,600/month.</h5>
+                <div>
+                    <p>Buy now at the current price, and save</p>
+                    
+                </div>
+            </div>
+            <div class="mainbody4">
+                <div class="box5">
+                   <div class="heading">
+                      <img src="https://static.hsappstatic.net/pricing-pages-unified-ui/static-1.13240/js/img/productIcons/MarketingHub_Starter.svg"/>
+                      <h4>Starter</h4>
+                   </div>
+                   <div class="heading1">
+                     <p>Starts at</p>
+                     <h3 class="price">$45/mo</h3>
+                     <p>billed at $600 $540/yr</p>
+                   </div>
+                   <div class="heading2">
+                    <input type="number" id="price1" placeholder="1000" aria-valuemin="1000">
+                    <h5>Marketting Contacts</h5>
+                   </div>
+                   <p>Includes 1,000 marketing contacts. Additional marketing contacts are sold in increments of 1,000 from $45.00/month. More details.</p>
+                   <div class="heading3">
+                       <div class="heading31">
+                         <div class="heading311">
+                            <h5>Pay Monthly</h5>
+                            <p>Commit monthly</p>
+                         </div>
+                         <div class="heading311">
+                            <h5>Pay upfront Save 10%</h5>
+                            <p>Commit annually</p>
+                         </div>
+                    </div>
+                    
+                        <button class="submit">Buy now</button>
+                        
+                    <div class="heading4">
+                        <p>Free tools with increased limits,plus</p>
+                        <div class="heading41">
+                            <h4>MARKETING AUTOMATION</h4>
+                            <div class="heading411">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Form automation</p>
+                            </div>
+                            <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Email automation</p>
+                            </div>
+                            
+                        </div>
+                        <div class="heading41">
+                            <h4>REMOVE HUBSPOT BRANDING FORM</h4>
+                            <div class="heading411">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Forms</p>
+                            </div>
+                            <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Email marketting</p>
+                            </div>
+                            <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>landing pages</p>
+                            </div>
+                            <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>live chat</p>
+                            </div>
+                            
+                        </div>
+                        <div class="heading41">
+                            <h4>GET HELP FAST</h4>
+                            <div class="heading411">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Email and in-app chat support</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                   </div>
+                
+                </div>
+                <div class="box5">
+                    <div class="heading">
+                        <img src="https://static.hsappstatic.net/pricing-pages-unified-ui/static-1.13240/js/img/productIcons/MarketingHub_Starter.svg"/>
+                        <h4>Starter</h4>
+                     </div>
+                     <div class="heading1">
+                       <p>Starts at</p>
+                       <h3 class="price">$45/mo</h3>
+                       <p>billed at $600 $540/yr</p>
+                     </div>
+                     <div class="heading2">
+                      <input type="number" id="price1" placeholder="1000" aria-valuemax="1000">
+                      <h5>Marketting Contacts</h5>
+                     </div>
+                     <p>Includes 1,000 marketing contacts. Additional marketing contacts are sold in increments of 1,000 from $45.00/month. More details.</p>
+                     <div class="heading3">
+                         <div class="heading31">
+                           <div class="heading311">
+                              <h5>Pay Monthly</h5>
+                              <p>Commit monthly</p>
+                           </div>
+                           <div class="heading311">
+                              <h5>Pay upfront Save 10%</h5>
+                              <p>Commit annually</p>
+                           </div>
+                      </div>
+                      
+                          <button class="submit">Buy now</button>
+                      <div class="heading4">
+                          <p>Free tools with increased limits,plus</p>
+                          <div class="heading41">
+                              <h4>AUTOMATE & PERSONALIZE</h4>
+                              <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>omni-channel marketing automation</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>ABM tools and automation</p>
+                              </div>
+                              <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Dynamic personalization</p>
+                              </div>
+                              <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Multi language content</p>
+                              </div>
+                              <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>ABM tools and automation</p>
+                              </div>
+                              <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>ABM tools and automation</p>
+                               </div>
+                               <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>ABM tools and automation</p>
+                              </div>
+
+                              
+                          </div>
+                          <div class="heading41">
+                              <h4>ORCHESTRATE EFFICIENT CAMPAIGNS</h4>
+                              <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Forms</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>Email marketting</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>landing pages</p>
+                              </div>
+                              
+                              
+                          </div>
+                          <div class="heading41">
+                              <h4>OPTIMIZE CAMPAIGN CONVERSION</h4>
+                              <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Email and in-app chat support</p>
+                              </div>
+                              <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Email and in-app chat support</p>
+                              </div>
+                              <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Email and in-app chat support</p>
+                              </div>
+                          </div>
+                          <div class="heading41">
+                            <h4>OPTIMIZE CAMPAIGN CONVERSION</h4>
+                            <div class="heading411">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Email and in-app chat support</p>
+                            </div>
+                            <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Email and in-app chat support</p>
+                            </div>
+                            <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Email and in-app chat support</p>
+                            </div>
+                            <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Email and in-app chat support</p>
+                              </div>
+                        </div>
+                        <div class="heading41">
+                            <h4>OPTIMIZE CAMPAIGN CONVERSION</h4>
+                            <div class="heading411">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Email and in-app chat support</p>
+                            </div>
+                            <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Email and in-app chat support</p>
+                            </div>
+                            <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Email and in-app chat support</p>
+                            </div>
+                            <div class="heading411">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Email and in-app chat support</p>
+                              </div>
+                        </div>
+                        
+                      </div>
+                     </div>
+                </div>
+                <div class="box5">
+                    <div class="heading">
+                        <img src="https://static.hsappstatic.net/pricing-pages-unified-ui/static-1.13240/js/img/productIcons/MarketingHub_Starter.svg"/>
+                        <h4>Starter</h4>
+                     </div>
+                     <div class="heading1">
+                       <p>Starts at</p>
+                       <h3 class="price">$45/mo</h3>
+                       <p>billed at $600 $540/yr</p>
+                     </div>
+                     <div class="heading2">
+                      <input type="number" id="price1" placeholder="1000" aria-valuemax="1000">
+                      <h5>Marketting Contacts</h5>
+                     </div>
+                     <p>Includes 1,000 marketing contacts. Additional marketing contacts are sold in increments of 1,000 from $45.00/month. More details.</p>
+                     <div class="heading3">
+                         <div class="heading31">
+                           <div class="heading311">
+                              <h5>Pay Monthly</h5>
+                              <p>Commit monthly</p>
+                           </div>
+                           <div class="heading311">
+                              <h5>Pay upfront Save 10%</h5>
+                              <p>Commit annually</p>
+                           </div>
+                      </div>
+                      
+                          <button class="submit">Buy now</button>
+                          
+                      <div class="heading4">
+                          <p>Free tools with increased limits,plus</p>
+                          <div class="heading41">
+                              <h4>MARKETING AUTOMATION</h4>
+                              <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Form automation</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>Email automation</p>
+                              </div>
+                              
+                          </div>
+                          <div class="heading41">
+                              <h4>REMOVE HUBSPOT BRANDING FORM</h4>
+                              <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Forms</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>Email marketting</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>landing pages</p>
+                              </div>
+                              <div class="heading411">
+                                  <i class="fa-solid fa-check"></i>
+                                  <p>live chat</p>
+                              </div>
+                              
+                          </div>
+                          <div class="heading41">
+                              <h4>GET HELP FAST</h4>
+                              <div class="heading411">
+                              <i class="fa-solid fa-check"></i>
+                              <p>Email and in-app chat support</p>
+                              </div>
+                              
+                              
+                          </div>
+                      </div>
+                     </div>
+                </div>
+            </div>
+            <div class="mainbody5">
+                <div class="mainbody51">
+                    <a href="">See all features</a>
+                </div>
+                <div class="mainbody51">
+                    <a href="">See all features</a>
+                </div>
+                <div class="mainbody51">
+                    <a href="">See all features</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid0">
+            <div class="mid1">
+              <h3>Free Tools</h3>
+              <p>start generating and emailing new leads,and mesuring your success -for free.</p>
+            </div>
+            <div tag="mid2">
+                <button>Get Started</button>
+            </div>
+            </div>
+            <hr>
+            <div class="mid3">
+                <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Contact management</p>
+                </div>
+                <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Contact website activity</p>
+                </div>
+                <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Companies</p>                    </div>
+                <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Deals</p>
+                </div>
+                <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Task & activities</p>
+                </div>
+            </div>
+        </div>
+        <h1><b>Recommended Bundles</b></h1>
+        <div class="bundles">
+            <div class="bund1">
+                <div>
+                    <h3>Starter CRM suite</h3>
+                    <p>Our Starter CRM Suite includes all the marketing, sales, content management, operations, and customer service tools your growing business needs.</p>
+                    <p><b>Ideal for:</b></p>
+                    <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Creating content and generating leads</p>
+                    </div>
+                    <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Streamlining your outreach, connecting with prospects, and tracking and improving performance</p>
+                    </div>
+                    <div class="free_tool1">
+                        <p>&#10004</p>
+                        <p>Organizing and tracking customer communications, maximizing productivity, and measuring efficiency</p>
+                    </div>
+                </div>
+                <div class="heading1">
+                    <p>Starts at</p>
+                    <h3 class="price">$45/mo</h3>
+                    <p>billed at $600 $540/yr</p>
+                    <div class="heading3">
+                        <div class="heading31">
+                          <div class="heading311">
+                             <h5>Pay Monthly</h5>
+                             <p>Commit monthly</p>
+                          </div>
+                          <div class="heading311">
+                             <h5>Pay upfront Save 10%</h5>
+                             <p>Commit annually</p>
+                          </div>
+                        </div>
+                     <button class="submit">Buy now</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bund2">
+                 <p><b>Includes free tools,plus:</b></p>
+                 <div class="bund21">
+                    <div class="bund211">
+                        <img src="https://static.hsappstatic.net/ui-addon-upgrades/static-9.6877/js/img/MarketingHub_Icon.svg">
+                        <p><b>Marketing HUb starter</b></p>
+                        <p> | </p>
+                        <img src="https://static.hsappstatic.net/ui-addon-upgrades/static-9.6877/js/img/CMSHub_Icon.svg">
+                        <p><b>CMS Hub Starter</b></p>
+                        <p> | </p>
+                        <img src="https://static.hsappstatic.net/ui-addon-upgrades/static-9.6877/js/img/CMSHub_Icon.svg">
+                        <p><b>CMS Hub Starter</b></p>
+                        <p> | </p>
+                        <img src="https://static.hsappstatic.net/ui-addon-upgrades/static-9.6877/js/img/CMSHub_Icon.svg">
+                        <p><b>CMS Hub Starter</b></p>
+                        <p> | </p>
+                        <img src="https://static.hsappstatic.net/ui-addon-upgrades/static-9.6877/js/img/CMSHub_Icon.svg">
+                        <p><b>CMS Hub Starter</b></p>
+                        
+                    </div>
+                 </div>
+             </div>
+        
+        </div>
+        <div class="numb">
+            <h4>Not sure which plan is right for you?</h4>
+                <h4>Give us a call.</h4>
+            </h2>
+            <div class="numb1">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 11712-79211</p>
+            </div>
+        </div>
+        <div class="bottom1">
+            <img src="https://static.hsappstatic.net/pricing-pages-unified-ui/static-1.13240/js/img/peopleBlobs/payments-smiling-person.png">
+            <div class="bottom11">
+                <h3>Transform your customers’ buying experience with built-in payments powered by the CRM.</h3>
+                <ul>
+                    <li>Unlock new revenue streams with more ways to collect payment</li>
+                    <li>Get paid faster with digital payments</li>
+                    <li>Give front office teams a 360-degree view of the customer</li>
+                    <li>Currently available in the U.S. only</li>
+
+                </ul>
+                <button class="learn">Learn more</button>
+            </div>
+        </div>
+        <div class="bottom2">
+            <img src="https://static.hsappstatic.net/pricing-pages-unified-ui/static-1.13240/js/img/peopleBlobs/gyasi.jpg">
+            <div class="bottom21">
+                <p>CUSTOMER SUPPORT</p>
+                <h1>HubSpot is more than just software.</h1>
+                <p>You don’t have to do it alone. HubSpot’s award-winning customer support and services teams are here to answer your questions, help you master the inbound methodology, and make sure you’re getting the most out of your tools. All that — plus our detailed help documentation, educational resources, and training programs — means you’ll never feel left out in the cold.</p>
+                <div class="bottom211">
+                    <div>
+                        <p><b>Phone & Email Support</b></p>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <p><b>Help Documentation & Training</b></p>
+                        <i class="fa-thin fa-book"></i>
+                    </div>
+                    <div>
+                        <p><b>community support</b></p>
+                        <i class="fa-thin fa-people-group"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            <div class="bottom">
+                <h1>Frequently Asked Questions</h1>
+                <div class="bottom0">
+                    <div>
+                        <p>></p>
+                        <p>Are HubSpot tools really free?</p>
+                    </div>
+                </div>
+                <div class="bottom0">
+                    <div>
+                        <p>></p>
+                        <p>What are the limits of my free HubSpot account</p>
+                    </div>
+                </div>
+                <div class="bottom0">
+                    <div>
+                        <p>></p>
+                        <p>Does HubSpot's free tools integrate with my email?</p>
+                    </div>
+                </div>
+                <div class="bottom0">
+                    <div>
+                        <p>></p>
+                        <p>What is user,and how many can I have with free HubSpot account?</p>
+                    </div>
+                </div>
+                <div class="bottom0">
+                    <div>
+                        <p>></p>
+                        <p>How many contact can I upload into my free HubSpot account?</p>
+                    </div>
+                </div>
+                <div class="bottom0">
+                    <div>
+                        <p>></p>
+                        <p>What types of support are available to free HubSpot users?</p>
+                    </div>
+                </div>
+        </div>
+        <div class="last">
+            <div>
+            <h1><b>Still have questions about how HubSpot's</b></h1>
+            <h1><b>software can help your business?</b></h1>
+            </div>
+            <div class="numb1">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 11712-79211</p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer0">
+            <div class="footer1">
+                <h2>Popular Features</h2>
+                <div class="footer11">
+                <ul>
+                    <p>Free Meeting Schedular App</p>
+                    <p>Social Media Tools</p>
+                    <p>Email Tracking Software</p>
+                    <p>Sales Email Automation</p>
+                    <p>Ads Software</p>
+                    <p>Email Marketting Software</p>
+                    <p>Lead management Software</p>
+                    <p>Pipeline Management Tools</p>
+                </ul>
+                <ul>
+                    <p>Sales Email Template</p>
+                    <p>Help Desk Software</p>
+                    <p>Free Online Form Builder</p>
+                    <p>Free Chatbot Builder</p>
+                    <p>Free Live Chat Software</p>
+                    <p>Marketing Analytics</p>
+                    <p>Free Landing Page Builder</p>
+                </ul>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="footer21">
+                   <h2>Free Tools</h2>
+                   <ul>
+                    <p>Website Grader</p>
+                    <p>Make My Persona</p>
+                    <p>Email Signature Generator</p>
+                    <p>Blog Ideas Generator</p>
+                    <p>Invoice Template Generator</p>
+                    <p>Marketing Plan Generator</p>
+                    <p>Free Business Templates</p>
+                    <p>Industry Benchmark Data</p>
+                    <p>Software Comparisons Library</p>
+                    <p>Website Themes & Templates</p>
+                   </ul>
+                </div>
+                <div>
+                  <h2>Company</h2>
+                  <ul>
+                    <p>About us</p>
+                    <p>Careers</p>
+                    <p>Management Team</p>
+                    <p>Board of Directors</p>
+                    <p>Investor Reaation</p>
+                    <p>Blog</p>
+                    <p>Contact us</p>
+                  </ul>
+                </div>
+                <div>
+                    <h2>Customers</h2>
+                    <ul>
+                        <p>Customer Support</p>
+                        <p>Join a Local User Group</p>
+                    </ul>
+                    <br>
+                    <h2>
+                        Partners
+                    </h2>
+                    <ul>
+                        <p>All Partner Program</p>
+                        <p>Solutions Partner Programe</p>
+                        <p>App Partner Program</p>
+                        <p>HubSpot for startups</p>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="footerbottom">
+                <div class="icon">
+                    <hr>
+                </div>
+                <div class="icon1">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-medium"></i>
+                </div>
+            </div>
+            
+            <div class="hubspot">
+                <img src="https://www.hubspot.com/hubfs/HubSpot_Logos/HSLogo_white.svg?t=1529611146261">
+                <p>Copyright @ 2022 HubSpot,Inc.</p>
+                <div class="hubspot1">
+                    <a>Legal Stuff</a>
+                    <p> | </p>
+                    <a>Privacy Policy</a>
+                    <p> | </p>
+                    <a>Security</a>
+                </div>
+            </div>
+         </footer>
+
+        
+
+    </body>
+    <script src="./tools.html"></script>
 </html>
